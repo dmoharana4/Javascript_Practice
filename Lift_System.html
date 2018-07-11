@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+<script type="text/javascript">
+
+
+    // 1st Person
+
+    var num1 = prompt("To Which floor U want to go");
+    if (num1 == 0) {
+      alert("U r currently at the SAME floor");
+    }
+    else if (num1 < 0) {
+        alert("Invalid Entry!!! Lift Can't go below the ground");
+      }
+    else if (num1 > 0 && num1 <= 5){
+      alert ("Lift shall go UP to " + num1 + "th floor")
+    }
+    else {
+      alert("Invalid Entry!!! There's no floor above 5th to go");
+    }
+
+    // 2nd Person
+
+    var num2 = prompt('To Which floor U want to go');
+    if (num2 == num1) {
+      alert("U r currently at the SAME floor");
+    }
+    else if (num2 < num1) {
+        alert("Lift shall go DOWN to " + num2 + "th floor");
+      }
+    else if (num2 < 0){
+      alert ("Invalid Entry!!! Lift Can't go below the ground");
+    }
+    else if (num2 > num1 && num2 <= 5){
+      alert ("Lift shall go UP to " + num2 + "th floor");
+    }
+    else {
+      alert("Invalid Entry!!! There's no floor above 5th to go");
+    }
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    
+  </head>
+  <body>
+<script type="text/javascript">
+
+var balance = 0;
+var add;
+var withdraw;
+
+var data = prompt(`what U want to do ???
+  balance
+  add
+  withdraw`);
+
+switch (data) {
+  case 'balance':
+alert("Ur balance is " + balance);
+    break;
+
+case 'add':
+  add = prompt("How much u want to add in Rs");
+ balance = balance + add ;
+  alert("Ur available balance is " + balance);
+  break;
+
+case 'withdraw':
+  withdraw = prompt("How much U want to Withdraw");
+  balance = balance - withdraw ;
+  alert("Ur available balance is " + balance);
+  break;
+
+  default:
+
+}
+
+</script>
+
+  </body>
+</html>

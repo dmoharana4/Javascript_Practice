@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="./if_else.js" charset="utf-8"></script>
+    <title></title>
+
+  </head>
+  <body>
+
+<script type="text/javascript">
+
+let UserObj = {}; // User Object
+let UserArray = []; //user Array
+
+
+for (index = 0; index < 5; index++) {
+
+  let input = prompt(`What U want to do ?
+  1. Register
+  2. Login
+  3. Password
+  4. Exit`);
+
+  switch (input) {
+
+
+    case '1':
+    case 'register':
+    case 'Register':
+
+
+      user.name = prompt("Enter ur Name");
+      user.age = Number(prompt("Enter ur Age"));
+      user.email = prompt("Enter ur email Id", "Max 25 character");
+      user.gender = prompt("Enter ur Sex");
+      user.password = prompt("Enter ur new password");
+
+
+      UserArray.push(UserObj);
+      UserObj = {};
+
+      break;
+
+    case '2':
+    case 'login':
+    case 'Login':
+
+
+      let username = prompt("Enter ur Name");
+      let pwd = prompt("Enter Password");
+
+    outer: for (index in UserArray) {
+
+        console.log(UserArray[index].name);
+        console.log(UserArray[index].password);
+
+
+
+          if (UserArray[index].name == username) {
+
+            // console.log(UserObj.name);
+            //
+            // console.log(UserObj.password);
+
+            if (UserArray[index].password == pwd) {
+
+              alert("Login Successfull")
+            } else {
+              alert("Incorrect Username or Password");
+              break outer ;
+            }
+          }
+        }
+      }
+
+break ;
+    default:
+      alert("Invalid Entry !!!!");
+
+  }
+console.log(UserArray);
+var con = prompt(`1 for Continue
+  2. Exit`);
+  if (con == "1") { }
+    else if (con == "2") {
+break;
+    }
+  }
+
+
+
+
+//   var MyObj = {
+//
+//     name: name ,
+//     age: age ,
+//     email: email ,
+//     gender: gender ,
+//     password: password
+//   }
+//
+
+//
+//
+//
+// console.log(MyArr);
+
+
+</script>
+
+  </body>
+</html>

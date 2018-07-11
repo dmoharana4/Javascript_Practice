@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    </head>
+  <body>
+<script type="text/javascript">
+
+let UserName = prompt("Enter Username");
+
+if (UserName !== 'admin' && UserName !== 'employee' && UserName !== 'user') {
+  alert ("User doesn't exist");
+}
+
+
+if (UserName == 'admin') {
+let Password = prompt("Enter Password");
+if (Password == 'admin') {
+  alert ("Welcome " + UserName.toUpperCase() + ". Ur available coin is 15");
+}
+else {
+  alert ("Wrong Password")
+}
+}
+
+
+
+if (UserName == 'employee') {
+let Password = prompt("Enter Password");
+if (Password == 'employee') {
+  alert ("Welcome " + UserName.toUpperCase() + ". Ur available coin is 10");
+}
+else {
+  alert ("Wrong Password")
+}
+}
+
+if (UserName == 'user') {
+let Password = prompt("Enter Password");
+if (Password == 'user') {
+  alert ("Welcome " + UserName.toUpperCase() + ". Ur available coin is 5");
+}
+else {
+  alert ("Wrong Password")
+}
+}
+
+
+</script>
+  </body>
+</html>

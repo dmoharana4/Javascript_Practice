@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    var name = prompt("Enter ur Name", "Max 25 character");
+
+    while (name.length > 25) {
+      alert("Max length should be of 25 Characters. Try again !!!");
+      name = prompt("Enter ur Name", "Max 25 character");
+    }
+
+    var age = Number(prompt("Enter ur Age", "25"));
+
+    while (age > 100 ) {
+      alert("Plz enter a valid age ");
+      age = Number(prompt("Enter ur Age"))
+    }
+
+    var email = prompt("Enter ur email Id", "Max 25 character", "example@email.com");
+    while (email.length > 25) {
+      alert("Max length should be of 25 Characters. Try again !!!")
+      email = prompt("Enter ur email Id", "Max 25 character");
+    }
+
+    var gender = prompt("Enter ur Sex", "male or female");
+    while (gender !== "male" && gender !== 'female' && gender !== NaN) {
+      alert("Enter valid Data. Try Again !!!");
+      gender = prompt("Enter ur Sex");
+    }
+
+    var marriage_status = prompt("Are u married ? ", "yes or no");
+    while (marriage_status !== 'yes' && marriage_status !== 'no' && marriage_status !== NaN) {
+      alert("Plz type yes or no");
+      marriage_status = prompt("Are u married ? ");
+    }
+  </script>
+
+</body>
+
+</html>

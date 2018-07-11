@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+
+<script type="text/javascript">
+var a = parseInt(prompt("Enter 1st Number"));
+var b = parseInt(prompt("Enter 2nd Number"));
+var c = parseInt(prompt("Enter 3rd Number"));
+
+if (a>=b && b>=c) {
+  alert("Numbers in sorted order are " + a + " " + b + " " + c);
+
+}
+else if (a>=b && c>=b) {
+  alert("Numbers in sorted order are " + a + " " + c + " " + b);
+
+}
+else if (b>=c && a>=c ) {
+  alert("Numbers in sorted order are " + b + " " + a + " " + c);
+
+}
+else if (b>=c && c>=a) {
+  alert("Numbers in sorted order are " + b + " " + c + " " + a);
+
+}
+else if (c>=b && b>=a ) {
+  alert("Numbers in sorted order are " + c + " " + b + " " + a);
+
+}
+else if (c>=b && a>=b) {
+  alert("Numbers in sorted order are " + c + " " + a + " " + b);
+
+}
+
+
+</script>
+
+  </body>
+</html>
