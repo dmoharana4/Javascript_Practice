@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script type="text/javascript">
+
+var button = document.createElement('button');
+button.innerHTML="Open Door";
+button.setAttribute('type' , 'button');
+button.setAttribute('onclick', 'openDoor()');
+document.body.appendChild(button);
+
+var button1 = document.createElement('button');
+button1.innerHTML="Close Door";
+button1.setAttribute('type' , 'button');
+button1.setAttribute('onclick', 'closeDoor()');
+document.body.appendChild(button1);
+
+var img = document.createElement("img");
+
+
+
+function openDoor() {
+  img.setAttribute("src" , 'OpenDoor.jpg');
+  img.setAttribute("alt" , 'OpenDoor');
+  document.body.appendChild(img);
+}
+
+function closeDoor() {
+img.setAttribute("src" , 'CloseDoor.jpg');
+img.setAttribute("alt" , 'CloseDoor');
+img.setAttribute("height" , '400px');
+img.setAttribute("width" , '400px');
+  document.body.appendChild(img);
+}
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<script type="text/javascript">
+
+var p = document.createElement('p');
+var h1 = document.createElement('h1');
+h1.innerHTML = "Hello Everyone...."
+p.appendChild(h1);
+document.body.appendChild(p);
+h1.setAttribute('id' , 'head1')
+var button = document.createElement('button');
+button.innerHTML="Change Color";
+button.setAttribute('type' , 'button');
+button.setAttribute('onclick', 'red()');
+document.body.appendChild(button);
+
+var button1 = document.createElement('button');
+button1.innerHTML="Reset";
+button1.setAttribute('type' , 'button');
+button1.setAttribute('onclick', 'reset()');
+document.body.appendChild(button1);
+
+function red() {
+h1.setAttribute('class' , 'red');
+}
+
+function reset() {
+  document.querySelector('.red').removeAttribute("class");
+}
+
+
+</script>
+
+
+
+
+<style media="screen">
+
+.red {
+  color: red ;
+}
+
+</style>
+
+
+  </body>
+</html>

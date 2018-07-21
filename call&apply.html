@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<script type="text/javascript">
+
+var resp = function (something) {
+return (console.log(this),
+console.log(this.name),
+console.log(this.model),
+console.log(this.power))
+}
+
+var car = { name: 'Lambo' , model: 'Aventedor', power: '780 HP' }
+
+resp.call(car);
+
+</script>
+
+  </body>
+</html>

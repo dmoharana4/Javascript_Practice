@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="./if_else.js" charset="utf-8"></script>
+    <!-- <script src="./if_else.js" charset="utf-8"></script> -->
   </head>
   <body>
 
@@ -37,133 +37,86 @@
 //   }
 //
 // }
-
+//
+// let num = function addd(a, b) {
+//   return(console.log( a+b))
+// }
 
 // Using CallBack
-// let add = (a,b) => {
-//   return a+b ;
-// }
-//
-// let sub = (a,b) => {
-//   return a-b ;
-// }
-// let mul = (a,b) => {
-//   return a*b ;
-// }
-// let div = (a,b) => {
-//   return a/b ;
-// }
-//
-// let calc = function (num1,num2,callback) //Here callback is reffered to a function
-// {
-//   if (typeof callback === "function") {
-//     return callback(num1,num2);
-//   }
-// else {
-//   return "Third parameter is not a function. plz pass a function"
-// }
-// }
-//
-// console.log(calc(5,6,add));//11
-// console.log(calc(5,6,sub));//-1
-// console.log(calc(5,6,mul));//30
-// console.log(calc(5,6,div));//0.8333
-// console.log(calc(5,6,ghjhhhc));//11
+let add = (a,b) => {
+return(console.log( a+b));
+}
 
+let sub = (a,b) => {
+  return(console.log( a-b));
 
-var objArr = [{
-num:5,
-name:'apple'
-},
+}
+let mul = (a,b) => {
+  return(console.log( a*b));
+
+}
+let div = (a,b) => {
+  return(console.log( a/b));
+
+}
+
+let calc = function (num1,num2,callback) //Here callback is reffered to a function
 {
-num:20,
-name:'banana'
-},
-{
-  num:15,
-  name:'cabbage'
-},
-{
-  num:12,
-  name:'orange'
-}];
-
-
-
-objArr.sort(function (val1 , val2) {
-  if (val1.name > val2.name) {
-    return -1 ;
-  } else {
-    return 1;
+  if (typeof callback === "function") {
+    return callback(num1,num2);
   }
-});
-console.log(objArr);
+else {
+  return "Third parameter is not a function. plz pass a function"
+}
+}
 
 
-
-
-
-
-// let x = function () {
-//   console.log("I am called from inside of function");
-// }
-//
-// let y = (z)=> {
-//   console.log("Do something here");
-// z();
-// }
-//
-// y(x);
-
-
-// Using If Else
-// let calc = function (num1,num2,calcType) {
-//   if (calcType == 'add') {
-//     return num1 + num2 ;
-//   }
-//   if (calcType == 'sub') {
-//     return num1 - num2 ;
-//   }
-//   if (calcType == 'mul') {
-//     return num1 * num2 ;
-//   }
-//   if (calcType == 'div') {
-//     return num1 / num2 ;
-//   }
-//
-// }
-
-
-// Using CallBack
-// let add = (a,b) => {
-//   return a+b ;
-// }
-//
-// let sub = (a,b) => {
-//   return a-b ;
-// }
-// let mul = (a,b) => {
-//   return a*b ;
-// }
-// let div = (a,b) => {
-//   return a/b ;
-// }
-//
-// let calc = function (num1,num2,callback) //Here callback is reffered to a function
-// {
-//   if (typeof callback === "function") {
-//     return callback(num1,num2);
-//   }
-// else {
-//   return "Third parameter is not a function. plz pass a function"
-// }
-// }
-//
 // console.log(calc(5,6,add));//11
 // console.log(calc(5,6,sub));//-1
 // console.log(calc(5,6,mul));//30
 // console.log(calc(5,6,div));//0.8333
 // console.log(calc(5,6,ghjhhhc));//11
+
+setTimeout(add , 1000 , 5 , 6 );
+setTimeout(sub , 2000 , 5 , 6 );
+setTimeout(mul , 3000 , 5 , 6 );
+setTimeout(div , 4000 , 5 , 6 );
+
+
+// setInterval(calc(5,6,add),1000);
+// setInterval(calc(5,6,add),1000);
+
+
+
+//callback
+// var objArr = [{
+// num:5,
+// name:'apple'
+// },
+// {
+// num:20,
+// name:'banana'
+// },
+// {
+//   num:15,
+//   name:'cabbage'
+// },
+// {
+//   num:12,
+//   name:'orange'
+// }];
+//
+//
+//
+// objArr.sort(function (val1 , val2) {
+//   if (val1.name > val2.name) {
+//     return -1 ;
+//   } else {
+//     return 1;
+//   }
+// });
+// console.log(objArr);
+
 
 
 </script>

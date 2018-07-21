@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<!-- <script src="./if_else.js" charset="utf-8"></script> -->
+<style media="screen">
+
+table, tr , td {
+  border : 1px solid red ;
+}
+
+</style>
+
+<script type="text/javascript">
+
+var table = document.createElement("table");
+var tr = document.createElement("tr");
+
+
+document.body.appendChild(table);
+(function() {
+  table.appendChild(tr);
+  for (var i = 1; i <= 3; i++) {
+    var th = document.createElement("th");
+    tr.appendChild(th);
+    th.innerHTML = "th" + i;
+  }
+})();
+
+
+function createRow() {
+  var tr2 = document.createElement("tr");
+  table.appendChild(tr2);
+  for (var x = 1; x <= 3; x++) {
+    var td = document.createElement("td");
+    tr2.appendChild(td);
+    td.innerHTML = "td" + x;
+  }
+}
+
+</script>
+
+<button type="button" onclick="createRow()" name="button">CreateRow</button>
+  </body>
+</html>
